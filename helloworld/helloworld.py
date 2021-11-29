@@ -5,11 +5,12 @@ class Problem():
         names = []
         with open(filename, "r") as file:
             for line in file:
-                names.append(line)
+                names.append(line.rstrip())
+        self.names = names
         return
 
 def main():
-    p = Problem('names.txt')
+    p = Problem('C:\\Users\\Ben\\Documents\\Coding Projects\\AoC2021\\helloworld\\names.txt')
     for name in p.names:
         print("Hello {}!\n".format(name))
 
