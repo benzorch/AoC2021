@@ -10,6 +10,7 @@ class Problem():
         return
 
 def main():
+    # TODO: look up how to do this with a list() or dict()
     p = Problem('C:\\Users\\Ben\\Documents\\Coding Projects\\AoC2021\\helloworld\\names.txt')
     for name in p.names:
         print("Hello {}!\n".format(name))
